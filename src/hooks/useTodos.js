@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useRef, useState, useEffect } from 'react'
 
 const useTodos = (key) => {
+  const isFirstRun = useRef(true)
   const [todos, setTodos] = useState([])
 
   const add = (note) => {
@@ -38,8 +39,13 @@ const useTodos = (key) => {
   }, [])
 
   useEffect(() => {
+    if (isFirstRun.current) return
     localStorage.setItem(key, JSON.stringify(todos))
   }, [todos])
+
+  useEffect(() => {
+    if (isFirstRun.current) isFirstRun.current = false
+  }, [])
 
   return [todos, add, del, edit]
 }
