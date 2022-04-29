@@ -18,7 +18,7 @@ const Todo = ({ todo, delTodo, editTodo }) => {
 
   return (
     <div className={styles.container}>
-      <span className={styles.date}>{`${year}/${month}/${day} ${hour}${minute}`}</span>
+      <span className={styles.date}>{`${year}/${month}/${day} ${hour}:${minute}`}</span>
       <MdRemove
         onClick={() => delTodo(todo.id)}
         className={styles.remove}
