@@ -5,11 +5,9 @@ import { Desk } from './pages'
 const App = () => {
   return (
     <>
-      <main>
-        <Routes>
-          <Route path='/' element={<Desk />} />
-        </Routes>
-      </main>
+      <Routes>
+        <Route path='/' element={<Desk />} />
+      </Routes>
     </>
   )
 }
