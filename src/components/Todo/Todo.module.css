@@ -1,3 +1,27 @@
+.container {
+  margin-block: 1rem;
+}
+
+.date {
+  background-color: #b24e2e;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  margin-inline-start: 1rem;
+}
+
+.remove {
+  background-color: #e34f4f;
+  border-radius: 0.5rem;
+  margin-inline-start: 0.5rem;
+  cursor: pointer;
+  transition: ease 300ms background-color;
+}
+
+.remove:hover {
+  background-color: #f87171;
+}
+
 .card {
   --icon-width: 0rem;
   --icon-background: #20305a;
