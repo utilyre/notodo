@@ -35,13 +35,6 @@ const Desk = () => {
           onChange={(e) => setTodoTobe(e.target.value)}
           className={styles.todoTobe}
         />
-
-        {/* <button */}
-        {/*   type='submit' */}
-        {/*   className={styles.add} */}
-        {/* > */}
-        {/*   Add */}
-        {/* </button> */}
       </form>
 
       {todos.map((todo) =>
