@@ -7,7 +7,7 @@ import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Router>
+    <Router basename='/notodo/'>
       <App />
     </Router>
   </StrictMode>
