@@ -1,0 +1,31 @@
+.container {
+  max-width: 35rem;
+  margin-inline: auto;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-block: 2rem;
+}
+
+.todoTobe {
+  font-size: 1.25rem;
+  padding: 0.25em;
+
+  background: transparent;
+  outline: none;
+  border: none;
+
+  border-bottom: #676767 solid 2pt;
+  transition: ease 300ms border;
+}
+
+.todoTobe:focus {
+  border-bottom-color: #ffbd80;
+}
+
+.add {
+  font-size: 1.25rem;
+  margin-inline: 0.5rem;
+}
